@@ -3,7 +3,7 @@
 let shift = (offset, points) => {
     points.forEach((point) => {
         let type = typeof point;
-        if (type == 'object') {
+        if (type === 'object') {
             point.x += offset.x;
             point.y += offset.y;
         } else {
